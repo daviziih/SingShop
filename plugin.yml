@@ -1,0 +1,7 @@
+name: WireShop
+version: 1.0
+main: me.davi.Loja
+author: zDvizinho
+depend: [Vault]
+commands:
+  geraritem:
