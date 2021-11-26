@@ -31,7 +31,7 @@ public final class Loja extends JavaPlugin {
 		getCommand("geraritem").setExecutor(new ItemGenerate(loja));
 
 	}
-//aaaa
+
 	private boolean setupEconomy() {
 		if (getServer().getPluginManager().getPlugin("Vault") == null) {
 			return false;
