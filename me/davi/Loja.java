@@ -29,8 +29,6 @@ public final class Loja extends JavaPlugin {
 		Bukkit.getPluginManager().registerEvents(new PlayerJoinEvent(), this);
 
 		getCommand("geraritem").setExecutor(new ItemGenerate(loja));
-		
-		Bukkit.getConsoleSender().sendMessage("Inicializando tarefas para inicialização...");
 
 	}
 

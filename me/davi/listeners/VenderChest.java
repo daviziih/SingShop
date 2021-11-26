@@ -1,6 +1,5 @@
 package me.davi.listeners;
 
-import me.davi.api.Mensagens;
 import me.davi.api.Utilidades;
 import me.davi.config.LojaConfig;
 import me.davi.enums.LojaEnum;
@@ -47,7 +46,7 @@ public final class VenderChest implements Listener {
 			return;
 		}
 
-		String placaLoja = Mensagens.nomeLoja;
+		String placaLoja = "Loja";
 
 		if (Utilidades.replaceShopName(sign.getLine(0)).equals(placaLoja)) {
 			return;

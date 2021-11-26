@@ -7,42 +7,42 @@ import org.bukkit.inventory.ItemStack;
 
 public final class LojaBuyServer extends Event {
 
-    private static final HandlerList handlers = new HandlerList();
-    private Player player;
-    private Double money;
-    private ItemStack itemBuy;
-    private Integer itensAmount;
+	private static final HandlerList handlers = new HandlerList();
+	private Player player;
+	private Double money;
+	private ItemStack itemBuy;
+	private Integer itensAmount;
 
-    public LojaBuyServer(Player player, Double money, ItemStack itemBuy, Integer itensAmount) {
-        this.player = player;
-        this.money = money;
-        this.itemBuy = itemBuy;
-        this.itensAmount = itensAmount;
-    }
+	public LojaBuyServer(Player player, Double money, ItemStack itemBuy, Integer itensAmount) {
+		this.player = player;
+		this.money = money;
+		this.itemBuy = itemBuy;
+		this.itensAmount = itensAmount;
+	}
 
-    public static HandlerList getHandlerList() {
-        return handlers;
-    }
+	public static HandlerList getHandlerList() {
+		return handlers;
+	}
 
-    public Player getPlayer() {
-        return player;
-    }
+	public Player getPlayer() {
+		return player;
+	}
 
-    public Double getMoney() {
-        return money;
-    }
+	public Double getMoney() {
+		return money;
+	}
 
-    public ItemStack getItemBuy() {
-        return itemBuy;
-    }
+	public ItemStack getItemBuy() {
+		return itemBuy;
+	}
 
-    @Override
-    public HandlerList getHandlers() {
-        return handlers;
-    }
+	@Override
+	public HandlerList getHandlers() {
+		return handlers;
+	}
 
-    public Integer getItensAmount() {
-        return itensAmount;
-    }
+	public Integer getItensAmount() {
+		return itensAmount;
+	}
 
 }

@@ -1,7 +1,7 @@
-name: WireShop
-version: 1.0
+name: SingShop
+version: 2.0-SHAPSHOT
 main: me.davi.Loja
-author: zDvizinho
+author: Daviziih
 softdepend: [Vault]
 load: STARTUP
 commands:

@@ -1,6 +1,5 @@
 package me.davi.listeners;
 
-import me.davi.api.Mensagens;
 import me.davi.api.Utilidades;
 import me.davi.config.LojaConfig;
 import me.davi.exceptions.*;
@@ -78,7 +77,7 @@ public final class CriarLoja implements Listener {
 					"O player " + player.getName() + " tentou criar uma loja com um item inválido: " + lines[3]);
 		}
 		Block block = sign.getBlock().getRelative(((org.bukkit.material.Sign) sign.getData()).getAttachedFace());
-		String placaLoja = Mensagens.nomeLoja;
+		String placaLoja = "Loja";
 		if (!Utilidades.replaceShopName(lines[0]).equals(placaLoja)) {
 			if ((!block.getType().equals(Material.CHEST)) && (!block.getType().equals(Material.TRAPPED_CHEST))) {
 				throw new CreateSignWithoutChestException(
